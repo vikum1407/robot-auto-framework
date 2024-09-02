@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.11.3 on win32)" generated="2024-08-23T15:52:07.040771" rpa="false" schemaversion="5">
+<suite id="s1" name="Robot-Framework" source="D:\Vikum\SDET\Robot-Framework\Robot-Framework">
+<suite id="s1-s1" name="TestCases" source="D:\Vikum\SDET\Robot-Framework\Robot-Framework\TestCases">
+<suite id="s1-s1-s1" name="FirstRobot" source="D:\Vikum\SDET\Robot-Framework\Robot-Framework\TestCases\FirstRobot.robot">
+<test id="s1-s1-s1-t1" name="LoginTest" line="10">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-08-23T15:52:07.352751" level="INFO">Opening browser 'chrome' to base url 'https://demo.nopcommerce.com/'.</msg>
+<msg time="2024-08-23T15:52:07.354749" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2024-08-23T15:52:07.354749" level="FAIL">ValueError: Unable to parse option: "add_argument('--no-sandbox'),add_argument('--disable-dev-shm-usage')"</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<arg>options=add_argument('--no-sandbox'),add_argument('--disable-dev-shm-usage')</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="FAIL" start="2024-08-23T15:52:07.351751" elapsed="0.008005">ValueError: Unable to parse option: "add_argument('--no-sandbox'),add_argument('--disable-dev-shm-usage')"</status>
+</kw>
+<kw name="Click Link" owner="SeleniumLibrary">
+<arg>xpath://a[@class='ico-login']</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-08-23T15:52:07.360750" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>id:Email</arg>
+<arg>vikum1408@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-08-23T15:52:07.361750" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>id:password</arg>
+<arg>viku43@32</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-08-23T15:52:07.361750" elapsed="0.000000"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>xpath://button[normalize-space()='Log in']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-08-23T15:52:07.362750" elapsed="0.000000"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2024-08-23T15:52:07.362750" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-08-23T15:52:07.349751" elapsed="0.013999">ValueError: Unable to parse option: "add_argument('--no-sandbox'),add_argument('--disable-dev-shm-usage')"</status>
+</test>
+<status status="FAIL" start="2024-08-23T15:52:07.080752" elapsed="0.285000"/>
+</suite>
+<status status="FAIL" start="2024-08-23T15:52:07.077753" elapsed="0.289998"/>
+</suite>
+<status status="FAIL" start="2024-08-23T15:52:07.050750" elapsed="0.319002"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Robot-Framework">Robot-Framework</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="TestCases">Robot-Framework.TestCases</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1" name="FirstRobot">Robot-Framework.TestCases.FirstRobot</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
